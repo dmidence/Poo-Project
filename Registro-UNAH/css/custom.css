@@ -99,5 +99,22 @@ body {
 }
 
 #navcontainer{
-  background-image: url(../img/fondo.png)
+  background-image: url(../img/fondo.png);
+  background-position: center;
+  background-size: auto;
+}
+
+.btnmenu{
+  color: #fff;
+    background-color: #01315F;
+    border-color: #01315F;
+
+}
+
+.btnmenu:hover{
+  background-color: orange
+}
+
+.sep{
+  margin-left: 10px;
 }
