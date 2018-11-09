@@ -1,7 +1,8 @@
-:root {
-  --jumbotron-padding-y: 3rem;
-}
 
+:root {
+  --tron-padding-y: 3rem;
+}
+@import "lesshat";
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
@@ -25,13 +26,37 @@
 
 .jumbotron .container {
   max-width: 40rem;
+ 
 }
 
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+
+.card-body{
+  font-family: 'Times New Roman';
+  font-size: 21px;
+  text-align: center;
+  height: 100px;
+  
 }
 
-footer p {
-  margin-bottom: .25rem;
+.div-contenedor{
+  padding: 20px;
+  background-color: black;
 }
+
+.col-md-4{
+ 
+
+  transition: width 2s, height 2s, transform 2s;
+  -moz-transition: width 2s, height 2s, -moz-transform 2s;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  -o-transition: width 2s, height 2s,-o-transform 2s;
+}
+.col-md-4:hover{
+  /* tranformamos el elemento al pasar el mouse por encima al doble de
+     su tamaño con scale(2). */
+ transform: scale(1.2);
+  -moz-transform : scale(1.2);      /* Firefox */
+  -webkit-transform : scale(1.2);   /* Chrome - Safari */
+  -o-transform : scale(1.2);        /* Opera */
+}
+
