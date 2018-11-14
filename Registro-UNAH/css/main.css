@@ -363,7 +363,8 @@ p {
 
 .logo
 {
-  margin-left: 50px;
+  margin-top: 0px;
+  margin-left: 30px;
   width: 300px;
   height: 80px;
   float: left;
