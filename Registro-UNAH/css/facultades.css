@@ -40,12 +40,15 @@
 
 .div-contenedor{
   padding: 20px;
-  background-color: black;
+
+}
+.card{
+  border: 2px solid #FEEF01;
+
 }
 
 .col-md-4{
  
-
   transition: width 2s, height 2s, transform 2s;
   -moz-transition: width 2s, height 2s, -moz-transform 2s;
   -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
@@ -59,4 +62,3 @@
   -webkit-transform : scale(1.2);   /* Chrome - Safari */
   -o-transform : scale(1.2);        /* Opera */
 }
-
