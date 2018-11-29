@@ -99,9 +99,10 @@ body {
 }
 
 #navcontainer{
-  background-image: url(../img/fondo.png);
+  background-image: url("img/puma.png");
   background-position: center;
   background-size: auto;
+  
 }
 
 .btnmenu{
@@ -112,7 +113,7 @@ body {
 }
 
 .btnmenu:hover{
-  background-color: orange
+  background-color: orange;
 }
 
 .sep{
