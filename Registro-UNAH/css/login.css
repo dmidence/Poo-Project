@@ -46,24 +46,26 @@ input[type="text"], input[type="password"]{
 
 
 #central{
+  position: relative;
  margin-top: 10px;
-  margin-left: 500px;
+ margin-left: 500px;
 }
 #lateral{
+  position: relative;
   margin-top: 70px;
   padding-left: 490px;
   float: left;
 
 }
 #talkbubble{
+  position: relative;
   padding: 15px;
   align-content: center;
   margin-top: 80px;
   margin-left: 620px;
-  opacity: 0.9;
+    opacity: 0.9;
   -moz-opacity: 0.8;
   filter: alpha(opacity=80);
   -khtml-opacity: 0.8;
 
 }
-

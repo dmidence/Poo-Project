@@ -95,17 +95,22 @@ body {
 }
 
 .unahcolor{
-  background-color: #01315F !important
+  background-image: url("../img/lucem-amarrilo.jpg");
 }
 
 #navcontainer{
-  background-image: url("img/puma.png");
-  background-position: center;
-  background-size: auto;
-  
+  background-color: white;
+  height: 100px;
+  width: 1500px;
+}
+
+#navbarCollapse{
+  margin-top: -60px;
+
 }
 
 .btnmenu{
+ 
   color: #fff;
     background-color: #01315F;
     border-color: #01315F;
@@ -113,9 +118,14 @@ body {
 }
 
 .btnmenu:hover{
-  background-color: orange;
+  background-color:orange;
 }
 
 .sep{
   margin-left: 10px;
+  
+
+}
+#logonombre{
+  margin-top: 15px;
 }

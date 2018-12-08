@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="img/logo.ico">
+    <link rel="icon" href="img/escudo.jpg">
 
     <title>DIPP-UNAH</title>
 
@@ -17,12 +17,12 @@
   </head>
   <body>
 
-    <?php
+  <?php
 include ("header.html") ;
-?>
+  ?> 
 
     <main role="main" style="
-    margin-top: 180px">
+    margin-top: 80px">
 
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
