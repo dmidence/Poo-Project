@@ -14,6 +14,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
+   
+    
   </head>
   <body>
 
@@ -84,20 +86,21 @@ include ("header.html") ;
             <div class="col-lg-12">
             <h1>Informacion</h1>
             </div>
-          <div class="col-lg-4">
-          <a href="#">  <img class="rounded-circle" src="img/circle1.jpg" alt="Generic placeholder image" width="140" height="140"></a>
-            <h2>Oferta Academica</h2>
+          <div class="col-lg-4 div-img hidden">
+          <a href="facultades.html">  <img class="rounded-circle img" src="img/circle1.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Oferta Academica</h2></a>
+            
             
              
           </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-              <a href="#">  <img class="rounded-circle" src="img/circle2.jpg" alt="Generic placeholder image" width="140" height="140"></a>
+          <div class="col-lg-4 div-img hidden">
+              <a href="#">  <img class="rounded-circle img" src="img/circle2.jpg" alt="Generic placeholder image" width="140" height="140"></a>
                 <h2>Guia de Estudio</h2>
                 
                  
               </div><!-- /.col-lg-4 -->
-              <div class="col-lg-4">
-                  <a href="#">  <img class="rounded-circle" src="img/circle3.jpg" alt="Generic placeholder image" width="140" height="140"></a>
+              <div class="col-lg-4 div-img hidden">
+                  <a href="#">  <img class="rounded-circle img" src="img/circle3.jpg" alt="Generic placeholder image" width="140" height="140"></a>
                     <h2>Solicitudes de Ingreso</h2>
                     
                      
