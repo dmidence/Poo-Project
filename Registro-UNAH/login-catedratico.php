@@ -30,26 +30,26 @@
         background-attachment: fixed;
     
       }
-
-     
-    
-@media only screen and (max-width: 1100px) {
+      @media (max-width: 1000px) {
   .form-signin{
-    margin: 0%;
+    margin-left: 250px;
+    margin-top: 10px;
     
   }
   #lateral{
-   padding-left: 90px;
+    margin-top: 100px;
+    margin-left: -150px;
   }
   #central{
     margin-left: 100px;
+  
   }
   #talkbubble{
-    margin-left: 210px;
+    margin-left: 460px;
+    margin-top:120px;
 }
 }
 
-   
 
    </style>
   </head>
