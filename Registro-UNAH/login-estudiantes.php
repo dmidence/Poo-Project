@@ -54,7 +54,10 @@ include ("header.html") ;
       <input type="text" placeholder="Numero de Cuenta"  >
       
       <input type="password" placeholder="Clave">
-      <input class="boton" type="button" value="Ingresar">
+      <button class="boton" type="button" id="butsign" > Ingresar
+      </button>
+      
+
     </form>
   </div>
     <footer id="texto-pequeño">
@@ -63,7 +66,9 @@ include ("header.html") ;
       <p> Para una mejor experiencia de navegación utilice los navegadores Internet Explorer o Google-Chrome
       </p>
     </footer>
-  
+    <script src="signinestudiante/js/jquery.min.js"></script>
+    <script src="signinestudiante/js/bootstrap.min.js"></script>
+    <script src="signinestudiante/js/signinalumno.js"></script>
 
   </body>
 </html>
