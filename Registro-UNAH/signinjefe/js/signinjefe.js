@@ -1,20 +1,20 @@
 $("#butsign").click(function(){
     $.ajax({
-		url:"signinestudiante/ajax/loginestudiante.php",
-		data:"NoCuenta="+$("#NoCuenta").val() + "&password="+$("#password").val(),
+		url:"signinjefe/ajax/loginjefe.php",
+		data:"NoJefe="+$("#NoJefe").val() + "&contraseña="+$("#contraseña").val(),
 		dataType:"json",
 		method:"POST",
 		success:function(respuesta){
 			console.log(respuesta);
 			if(respuesta.estatus == 1){
-				if(respuesta.acceso=="Estudiante");
-                    window.location.href ="matricula.php";
+				if(respuesta.acceso=="jefe");
+                    window.location.href ="facultades.html";
                     
                     $("#contenido-usuarios").append(
                         `
                             <b>${respuesta.nombre}</b>
                             <b>${respuesta.apellido}</b>
-                            <b>${respuesta.NoCuenta}</b>
+                            <b>${respuesta.NoJefe}</b>
                             <b>${respuesta.acceso}</b>
                         `
                     );
@@ -23,7 +23,7 @@ $("#butsign").click(function(){
 
             }else{
                 if(respuesta.estatus == 0){
-                $('#NoCuenta').css('border-bottom-color', '#F14B4B')
+                $('#NoJefe').css('border-bottom-color', '#F14B4B')
 				var mensajeModal = '<div class="modal_wrap">'+
                                     '<div class="mensaje_modal">'+
 										'<h2 style="text-align:center;">Credenciales De Ingreso al Sistema Erroneas</h2>'+

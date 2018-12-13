@@ -51,10 +51,10 @@ include ("header.html") ;
     <form class="form-signin">
     <h5>Ingresa tu numero de empleado y clave</h5>
    
-      <input type="text" placeholder="No. Empleado"  >
+      <input type="text" id="NoJefe" placeholder="No. Empleado"  >
       
-      <input type="password" placeholder="Clave">
-      <input class="boton" type="button" value="Ingresar">
+      <input type="password" id="contraseña" placeholder="Clave">
+      <button class="boton" type="button" id="butsign" > Ingresar
     </form>
   </div>
     <footer id="texto-pequeño">
@@ -63,7 +63,11 @@ include ("header.html") ;
       <p> Para una mejor experiencia de navegación utilice los navegadores Internet Explorer o Google-Chrome
       </p>
     </footer>
-  
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script src="signinjefe/js/jquery.min.js"></script>
+<script src="signinjefe/js/bootstrap.min.js"></script>
+<script src="signinjefe/js/signinjefe.js"></script>
 
   </body>
 </html>

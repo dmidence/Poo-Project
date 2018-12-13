@@ -51,9 +51,9 @@ include ("header.html") ;
     <form class="form-signin">
     <h5>Ingresa tu numero de cuenta y clave</h5>
    
-      <input type="text" placeholder="Numero de Cuenta"  >
+      <input type="text" id="NoCuenta" placeholder="Numero de Cuenta"  >
       
-      <input type="password" placeholder="Clave">
+      <input type="password" id="password" placeholder="Clave">
       <button class="boton" type="button" id="butsign" > Ingresar
       </button>
       
@@ -66,6 +66,8 @@ include ("header.html") ;
       <p> Para una mejor experiencia de navegación utilice los navegadores Internet Explorer o Google-Chrome
       </p>
     </footer>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
     <script src="signinestudiante/js/jquery.min.js"></script>
     <script src="signinestudiante/js/bootstrap.min.js"></script>
     <script src="signinestudiante/js/signinalumno.js"></script>
