@@ -18,44 +18,14 @@ $("#butsign").click(function(){
                             <b>${respuesta.acceso}</b>
                         `
                     );
-                   
+                  
                     console.log("El servidor DICE: "+respuesta.nombre);
 
             }else{
-                if(respuesta.estatus == 0){
-                $('#NoCuenta').css('border-bottom-color', '#F14B4B')
-				var mensajeModal = '<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">'+
-                                    '<div class="modal-dialog" role="document">'+
-										'<div class="modal-content">'+
-										'<div class="modal-header">'+
-										'<button type="button" class="close" aria-label="Close">'+
-										'<span aria-hidden="true">&times;</span>'+
-                                        '</button>'+
-                                    '<h4 class="modal-title" id="myModalLabel">Esto es un modal</h4>'+
-                                '</div>'+
-                                '<div class="modal-body">'+
-                                'Texto del modal'+
-                                '</div>'+
-                                '</div>'+
-                                '</div>'+
-                                '</div>'
-                                
-                $('body').append(mensajeModal);
+                if(respuesta.estatus == 0)
+                $(`body`).html("<div class='alert alert-danger' role='alert'><b>acceso denegado, </b>no se pudo comprobar el usuario</div>");
+            }
                 }
-            }
-                // CERRANDO MODAL ==============================
-                $('#btnClose').click(function(){
-                    $('.modal_wrap').remove();
-                });
 
-         
-
-
-            },
-            error:function(error){
-                console.error(error);
-                $("#notificacion").append(error.responseText);
-            }
-
-	});
-});
+        });
+    });
