@@ -1,3 +1,8 @@
+<?php
+    session_start();  
+    if (!isset($_SESSION["NoCuenta"]))
+        header("Location: login-estudiantes.html");//Redireccion con PHP
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,6 +66,6 @@ include ("header.html") ;
 
 <script src="js/jquery.min.js"></script> 
    
- <script src="js/controlador.js"></script>
+ <script src="signinestudiante/js/controlador.js"></script>
 </body>
 </html>

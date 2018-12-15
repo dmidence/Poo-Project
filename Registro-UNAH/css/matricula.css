@@ -1,6 +1,16 @@
 
 
 
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("../img/fondouni.jpg");
+        
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+  
+      }
+
 #datos{
     border-radius: 5px;
     display:inline-block;

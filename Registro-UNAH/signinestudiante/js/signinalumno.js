@@ -9,18 +9,11 @@ $("#butsign").click(function(){
 			if(respuesta.estatus == 1){
 				if(respuesta.acceso=="Estudiante");
                     window.location.href ="matricula.php";
-                    
-                    $("#contenido-usuarios").append(
-                        `
-                            <b>${respuesta.nombre}</b>
-                            <b>${respuesta.apellido}</b>
-                            <b>${respuesta.NoCuenta}</b>
-                            <b>${respuesta.acceso}</b>
-                        `
-                    );
-                   
                     console.log("El servidor DICE: "+respuesta.nombre);
 
+                  
+
+                    
             }else{
                 if(respuesta.estatus == 0){
                 $('#NoCuenta').css('border-bottom-color', '#F14B4B')
@@ -50,5 +43,8 @@ $("#butsign").click(function(){
                 $("#notificacion").append(error.responseText);
             }
 
-	});
+    });
+   
+
+    
 });

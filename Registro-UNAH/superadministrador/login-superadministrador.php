@@ -69,11 +69,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/signinadministrador.js"></script>
-    <?php
-       if($registro["estatus"] = "0")
-       {
-          echo "<div style='color:red'>Usuario o contraseña invalido </div>";
-       }
-     ?>
+   
   </body>
 </html>
