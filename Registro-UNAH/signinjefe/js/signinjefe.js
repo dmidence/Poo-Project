@@ -8,18 +8,9 @@ $("#butsign").click(function(){
 			console.log(respuesta);
 			if(respuesta.estatus == 1){
 				if(respuesta.acceso=="jefe");
-                    window.location.href ="facultades.html";
+                    window.location.href ="signinjefe/jefe.php";
                     
-                    $("#contenido-usuarios").append(
-                        `
-                            <b>${respuesta.nombre}</b>
-                            <b>${respuesta.apellido}</b>
-                            <b>${respuesta.NoJefe}</b>
-                            <b>${respuesta.acceso}</b>
-                        `
-                    );
-                   
-                    console.log("El servidor DICE: "+respuesta.nombre);
+                  
 
             }else{
                 if(respuesta.estatus == 0){
