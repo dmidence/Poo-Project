@@ -10,7 +10,7 @@ $("#butsign").click(function(){
 				if(respuesta.acceso=="Estudiante");
                     window.location.href ="matricula.php";
                     console.log("El servidor DICE: "+respuesta.nombre);
-
+                    $("#imagen-usuario").attr("src",respuesta.urlImagen);
                   
 
                     
