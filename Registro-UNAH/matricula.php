@@ -12,11 +12,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/logo.ico">
     <link href="css/matricula.css" rel="stylesheet"> 
+    <link href="signinestudiante/css/fa-svg-with-js.css" rel="stylesheet"> 
 </head>
 <body>
 <?php
 include ("header.html") ;
 ?>
+ 
+
    <div id="principal">
         <div  id="datos">
        <div id="div-foto"> <img  width="200px"height="150px"src="<?php echo $_SESSION["urlImagen"];  ?>" alt=""></div>
@@ -43,69 +46,33 @@ include ("header.html") ;
             </div>
            
         </div>
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  adicionar
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
+      
 
         <div id="div-matricula">
         
+          <div id="opcioneses" class="row">
+           <seccion class="col-lg-12 col-md-12 col-12  " style="display: inherit; margin: 5px;     ">
+              <a href="facultades.html" style=" -webkit-text-stroke: orange;
+    -webkit-text-stroke-width: medium;
+    color: black;">  
+              <h5><i class="fas fa-book"></i>Historial Academico</h5></a>
+            </seccion>
+            <seccion class="col-lg-12 col-md-12 col-12  " style="
+            display: inherit; margin: 5px;
+              ">
+            <a href="facultades.html" style=" -webkit-text-stroke: orange;
+    -webkit-text-stroke-width: medium;
+    color: black;">  
+             <h5><i class="fas fa-book"></i>Matricula</h5></a>
+            </seccion>
+           
 
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Launch demo modal
-</button>
+          </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-        <select class="selecciones" name="departamentos" size=12>
+       <!-- <select class="selecciones" name="departamentos" size=12>
             
             <optgroup label="Departamentos"> 
-                                                            <!--<option value="1">Ingeneria en sistema</option>   asi debe de incluirse los departamentos y secciones-->
+                                                            <!--<option value="1">Ingeneria en sistema</option>   asi debe de incluirse los departamentos y secciones
 
             </optgroup> 
            </select>
@@ -129,7 +96,7 @@ include ("header.html") ;
                  Asignaturas Matriculas
 
              </div>
-    </div>
+    </div> -->
 
 
   </div>
@@ -140,7 +107,7 @@ include ("header.html") ;
 
 <script src="js/jquery.min.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
-
+<script src="signinestudiante/js/fontawesome-all.min.js"></script> 
  <script src="signinestudiante/js/controlador.js"></script>
 </body>
 </html>
