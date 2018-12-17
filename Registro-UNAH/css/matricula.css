@@ -70,3 +70,9 @@
     border: 3px solid #00315F;
     margin-top: 40px;
 }
+
+.afixed{
+    -webkit-text-stroke: orange;
+    -webkit-text-stroke-width: medium;
+    color: black;
+}
