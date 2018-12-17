@@ -52,7 +52,7 @@ include ("header.html") ;
         
           <div id="opcioneses" class="row">
            <seccion class="col-lg-12 col-md-12 col-12  " style="display: inherit; margin: 5px;     ">
-              <a href="facultades.html" style=" -webkit-text-stroke: orange;
+              <a href="histoac.php" style=" -webkit-text-stroke: orange;
     -webkit-text-stroke-width: medium;
     color: black;">  
               <h5><i class="fas fa-book"></i>Historial Academico</h5></a>
@@ -60,7 +60,7 @@ include ("header.html") ;
             <seccion class="col-lg-12 col-md-12 col-12  " style="
             display: inherit; margin: 5px;
               ">
-            <a href="facultades.html" style=" -webkit-text-stroke: orange;
+            <a href="adiclas.php" style=" -webkit-text-stroke: orange;
     -webkit-text-stroke-width: medium;
     color: black;">  
              <h5><i class="fas fa-book"></i>Matricula</h5></a>
