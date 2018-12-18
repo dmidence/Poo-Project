@@ -1,5 +1,5 @@
 <?php
-    include("../class/class-departamentos.php");
-      echo Departamento::obtenerdepartamentos();
+    include("../class/classfac.php");
+      echo Fillfac::llenar();
     
 ?>
