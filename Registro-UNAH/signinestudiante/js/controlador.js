@@ -20,39 +20,28 @@ $(document).ready(function(){
 		}
 	});
 
+	
 
 
 
 });
+function cambioOpciones()
+
+	{
+
+		document.getElementById('clases').value=document.getElementById('facu').value;
+
+	}
 
 
-
-$("#clases").change(function(){
+$("#facu").change(function(){
+	var facultad = $("#facu").val();
 	
-	var facult = $("#facu").val();
-	
-				switch(facult[1]){
-				case "ec":
-					cssIcono = "far fa-file-word";
-					break;
-				case "es":
-					cssIcono = "far fa-file-pdf";
-					break;
-				case "nat":
-					cssIcono = "far fa-file-image";
-					break;
-				case "jpg":
-					cssIcono = "far fa-file-image";
-					break;
-				default:
-					cssIcono = "far fa-file";
-					break;
-				} 
 		
 	$.ajax({
-		url:"ajax/clases.php",
+		url:"signinestudiante/ajax/clases.php?accion=1",			
 		method:"GET",
-        data:"facultad="+facultad,
+        data: "op="+facultad,
 		dataType:"json",
 		success:function(respuesta){
             console.log(respuesta);
@@ -63,12 +52,14 @@ $("#clases").change(function(){
 				);
 			}
 		},
-		error:function(error){
-			console.error(error);
-			$("#jefe").append(error.responseText);
-		}
-	});
+	
+	error:function(error){
+		console.error(error);
+		$("#jefe").append(error.responseText);
+	}
+	
 });
+
 
 //====================================================obtener secciones=================================================================
 $("#select-clases").change(function(){
@@ -135,7 +126,4 @@ $("#btn-matricular").click(function(){
 					}	
 				
 			});
-});
-
-
-
+});})
