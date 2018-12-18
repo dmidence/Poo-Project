@@ -1,40 +1,31 @@
 <?php
-//aqui creamos la clase para dar a los usuarios y luego la llamamos en el ajax
-class Docente{ 
-	private $NoEmpleado;
+class Docente{
 	private $nombre;
-	private $apellido;
-    private $urlImagen;
-    private $
+    private $num;
+    private $pass;
 
 	public function __construct(
-		$NoEmpleado = null,
 		$nombre = null,
-		$apellido = null,
-		$urlImagen = null
+        $num = null,
+        $pass = null
+		
 	){
-		$this->NoEmpleado = $NoEmpleado;
+
 		$this->nombre = $nombre;
-		$this->apellido = $apellido;
-		$this->urlImagen = $urlImagen;
+        $this->num = $num;
+        $this->pass = $pass;
+        
+		
 	}
 
 	public function __toString(){
 		$var = "Docente{"
-		."NoEmpleado: ".$this->NoEmpleado." , "
 		."nombre: ".$this->nombre." , "
-		."apellido: ".$this->apellido." , "
-		."urlImagen: ".$this->urlImagen;
+        ."num: ".$this->num." , "
+        ."pass: ".$this->pass;
 		return $var."}";
 	}
 
-	public function getNoEmpleado(){
-		return $this->NoEmpleado;
-	}
-
-	public function setNoEmpleado($NoEmpleado){
-		$this->NoEmpleado = $NoEmpleado;
-	}
 	public function getNombre(){
 		return $this->nombre;
 	}
@@ -42,29 +33,59 @@ class Docente{
 	public function setNombre($nombre){
 		$this->nombre = $nombre;
 	}
-	public function getApellido(){
-		return $this->apellido;
+
+	public function getNum(){
+		return $this->num;
 	}
 
-	public function setApellido($apellido){
-		$this->apellido = $apellido;
-	}
-	public function getUrlImagen(){
-		return $this->urlImagen;
-	}
-
-	public function setUrlImagen($urlImagen){
-		$this->urlImagen = $urlImagen;
+	public function setNum($num){
+		$this->num = $num;
+    }
+    
+    public function getPass(){
+		return $this->pass;
 	}
 
-	//Funcion estatica: se puede acceder sin crear una instancia
-    public static function obtenerNoEmpleados(){ 				//aqui obtenemos los NoEmpleados de nuestro json y creamos una clases la cual llamamos en el ajax
-        $archivo = fopen("../data/usuarios.json", "r");
+	public function setPass($pass){
+		$this->pass = $pass;
+	}
+
+    public static function obtenerDocentes(){
+        $archivo = fopen("../data/empleados/docentes.json", "r");
         $registros = array();
         while(($linea=fgets($archivo))){
             $registros[] = json_decode($linea, true);
         }
         return json_encode($registros);
+	}
+    
+
+
+	public function guardarDocentes(){
+        $respuesta = array();
+        if(isset($_POST["nombre"])){
+            if(!file_exists("../data/empleados/docentes.json")){
+                $archivo = fopen("../data/empleados/docentes.json", "w");
+            }
+            $archivo = fopen("../data/empleados/docentes.json", "a+");
+           
+            $registro["nombre"] = $this->nombre;
+            $registro["num"] = $this->num;
+			$registro["pass"] = $this->pass;
+			
+
+            fwrite($archivo, json_encode($registro)."\n");
+            fclose($archivo);
+
+            $respuesta = $registro;
+            $respuesta["cod"] = 1;
+            echo json_encode($respuesta);
+        }else{
+            $respuesta["cod"] = 0;
+            echo json_encode($respuesta);
+           
+        }
+
     }
 }
 ?>
