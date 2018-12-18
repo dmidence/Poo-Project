@@ -29,8 +29,7 @@
         <option value="depto-ingenieria">Departamento De Ingenieria en Sistema</option>
         <option value="depto-fisicas">Departamentos de Fisicas</option>
         <option value="depto-optativas">Departamento Optativas</option>
-        <option value="depto-arteodeporte">Departamento arte o deporte</option>
-        
+        <option value="depto-arteodeporte">Departamento arte o deporte</option>     
     </select>                   
 </div>                    
                         
