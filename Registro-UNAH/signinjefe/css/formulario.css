@@ -1,0 +1,18 @@
+body{
+    align-content: center;
+}
+#principal{
+    text-align: center;
+
+}
+body {
+         
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/f1.jpg");
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+  }
