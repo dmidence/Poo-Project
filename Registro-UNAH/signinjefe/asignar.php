@@ -16,17 +16,17 @@
 </head>
 <body>
 
-<div id="principal">
+   <div id="principal">
         <div  id="datos">
-       <div id="div-foto"> <img  width="200px"height="150px"src="<?php echo $_SESSION["urlImagen"];  ?>" alt=""></div>
+       <div id="div-foto"> <img  width="200px"height="150px"src=" " alt=""></div>
                 <div id="datos1" >
-            Numero De Empleado  <?php echo $_SESSION["NoJefe"];  ?>        
+            Numero De Cuenta:   
             <br>
             <br>
-            Nombre:  <?php echo $_SESSION["nombre"] ?>                 
+            Nombre:                  
     <br>
     <br>
-            Carrera:  <?php echo $_SESSION["carrera"];  ?>
+            Carrera:  
             <br>
             <br>
             </div>
@@ -34,18 +34,47 @@
              Periodo: III
              <br>
              <br>
-             Centro: <?php echo $_SESSION["centro"];  ?>
+             Centro: 
              <br>
              <br>
              año: 2018
             
             </div>
-            </div> 
+           
         </div>
-         <div id="docentes">
-        </div>
+        <div id="div-matricula">
+        <select class="selecciones" name="departamentos" size=12>
+            
+            <optgroup label="Departamentos"> 
+                                                            <!--<option value="1">Ingeneria en sistema</option>   asi debe de incluirse los departamentos y secciones-->
 
-  
+            </optgroup> 
+           </select>
+            <select class="selecciones" name="asignatura" size=12>
+            
+            <optgroup label="Asignatura"> 
+           
+            </optgroup> 
+            </select>
+            <select class="selecciones" name="secciones" size=12>
+            
+            <optgroup label="Secciones"> 
+           
+            </optgroup>
+            </select> 
+            <br>
+            <input class="boton-matricular" type="button" value="Agregar">
+            </div>
+         <div>
+             <div id="mostrarasignaturas">
+                 Asignaturas Matriculas
+
+             </div>
+    </div>
+
+
+  </div>
+
 
 
 
