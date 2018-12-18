@@ -2,9 +2,7 @@
     session_start();  
     if (!isset($_SESSION["NoCuenta"]))
         header("Location: login-estudiantes.php");
-
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,13 +41,13 @@ include ("header.html") ;
                          <div class="col-12" style="margin-bottom:2%">
   
                             <div>
-                                    <select name="facultades" id="facu"  class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " style="float:left">
+                                    <select name="facultades" id="facu" class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " style="float:left">
                                         
                                     </select>
 
                                    
                                     <select multiple class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " id="clases"  size="7">
-                                    <input type="text" id="kira" style="display:none" class="form-control" value="<?php echo isset($_GET['carpeta'])?$_GET['carpeta']:''; ?>" disabled>                          
+                                    <input type="text" id="txt-carpeta-actual" style="display:none" class="form-control" value="<?php echo isset($_GET['carpeta'])?$_GET['carpeta']:''; ?>" disabled>                                  
                                     </select>
 
                                     <select multiple class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " id="select-secciones" size="7">
