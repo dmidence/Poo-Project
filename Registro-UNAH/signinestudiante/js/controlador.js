@@ -3,15 +3,15 @@
 $(document).ready(function(){
 	console.log("Se ha cargado el DOM");
 	$.ajax({
-		url:"ajax/llenarfacu.php",
+		url:"signinestudiante/ajax/llenarfacu.php",
 		method:"GET",
 		dataType:"json",
 		success:function(respuesta){
             console.log(respuesta);
-			$("#slc-departamentos").html(`<option value="seleccionar">Seleccione el departamento/option>`+ $("#slc-departamentos").html());
+			$("#facu").append(`<option value="sel" >Seleccione la Facultad</option>`);
 			for (var i =0;i<respuesta.length;i++){
-                $("#slc-departamentos").html(`
-                <option value="${respuesta[i].carpeta}">${respuesta[i].departamento}</option>`+$("#slc-departamentos").html()
+                $("#facu").append(`
+                <option value="${respuesta[i].op}">${respuesta[i].facultad}</option>`
 				);
 			}
 		},
@@ -20,38 +20,28 @@ $(document).ready(function(){
 		}
 	});
 
+	
+
 
 
 });
+function cambioOpciones()
+
+	{
+
+		document.getElementById('clases').value=document.getElementById('facu').value;
+
+	}
 
 
-
-$("#slc-asignaturas").change(function(){
+$("#facu").change(function(){
+	var facultad = $("#facu").val();
 	
-	var facult = $("slc-departamentos").val();
-	
-				switch(facult[1]){
-				case "ec":
-					cssIcono = "far fa-file-word";
-					break;
-				case "es":
-					cssIcono = "far fa-file-pdf";
-					break;
-				case "nat":
-					cssIcono = "far fa-file-image";
-					break;
-				case "jpg":
-					cssIcono = "far fa-file-image";
-					break;
-				default:
-					cssIcono = "far fa-file";
-					break;
-				} 
 		
 	$.ajax({
-		url:"ajax/clases.php",
+		url:"signinestudiante/ajax/clases.php?accion=1",			
 		method:"GET",
-        data:"facultad="+facultad,
+        data: "op="+facultad,
 		dataType:"json",
 		success:function(respuesta){
             console.log(respuesta);
@@ -62,22 +52,22 @@ $("#slc-asignaturas").change(function(){
 				);
 			}
 		},
-		error:function(error){
-			console.error(error);
-			$("#jefe").append(error.responseText);
-		}
-	});
+	
+	error:function(error){
+		console.error(error);
+		$("#jefe").append(error.responseText);
+	}
+	
 });
 
-//====================================================obtener secciones=================================================================
-$("#select-clases").change(function(){
-	var carrera = $("#select-carreras").val();
-    var facultad = $("#slc-facultades").val();
-    var clase = $("#select-clases").val();
 
-	//Esta funcion se ejecuta cada vez que el usuario selecciona o cambia un elemento de la lista.	
+$("#clases").change(function(){
+	var facultad = $("#facu").val();
+    var clase = $("#clases").val();
+
+	
 	$.ajax({
-		url:"ajax/secciones.php?accion=1",			//la accion 1 es para obtener las seccioness
+		url:"ajax/secciones.php?accion=1",			
 		method:"GET",
         data: "codCarrera="+carrera+"&"
               +"facultad="+facultad+"&"
@@ -87,7 +77,7 @@ $("#select-clases").change(function(){
             console.log(respuesta);
 
 			for (var i =0;i<respuesta.length;i++){
-                $("#select-secciones").append(`
+                $("#secciones").append(`
                 <option value="${respuesta[i].seccion}"><b>Seccion:</b> ${respuesta[i].seccion} <b>cupos:</b> ${respuesta[i].cupos}   <b>dias:</b> ${respuesta[i].dias}   <b>Docente:</b> ${respuesta[i].docente}</option>`
 				);
 			}
@@ -134,7 +124,4 @@ $("#btn-matricular").click(function(){
 					}	
 				
 			});
-});
-
-
-
+});})
