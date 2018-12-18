@@ -2,7 +2,9 @@
     session_start();  
     if (!isset($_SESSION["NoCuenta"]))
         header("Location: login-estudiantes.php");
+
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +13,7 @@
     <title>Matricula</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/logo.ico">
-
+    <script src="js/jquery.min.js"></script> 
     <link href="signinestudiante/css/bootstrap.min.css" rel="stylesheet"> 
     <link href="signinestudiante/css/matri.css" rel="stylesheet"> 
     <link href="signinestudiante/css/fa-svg-with-js.css" rel="stylesheet">
@@ -21,7 +23,6 @@
 <?php
 include ("header.html") ;
 ?>
-<div id="principal">
 <div class="container" style="margin-top:150px">
           <button id="btnadic" style=""  class="btn btnad" type="button" data-toggle="modal" data-target="#adicionar">Adicionar Asignatura</button>
                     </div>
@@ -42,13 +43,13 @@ include ("header.html") ;
                          <div class="col-12" style="margin-bottom:2%">
   
                             <div>
-                                    <select name="departamentos" id="slc-departamentos" class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " style="float:left">
+                                    <select name="facultades" id="facu"  class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " style="float:left">
                                         
                                     </select>
 
                                    
                                     <select multiple class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " id="clases"  size="7">
-                                    <input type="text" id="txt-carpeta-actual" style="display:none" class="form-control" value="<?php echo isset($_GET['carpeta'])?$_GET['carpeta']:''; ?>" disabled>                                  
+                                    <input type="text" id="kira" style="display:none" class="form-control" value="<?php echo isset($_GET['carpeta'])?$_GET['carpeta']:''; ?>" disabled>                          
                                     </select>
 
                                     <select multiple class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " id="select-secciones" size="7">
@@ -67,13 +68,13 @@ include ("header.html") ;
         </div>
           
     </div>
-    </div>
 
-    <script src="js/jquery.min.js"></script>     
+
+ <script src="js/jquery-3.3.1.js"></script>     
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/matricular.js"></script>
+    <script src="signinestudiante/js/controlador.js"></script>
+
 <script src="signinestudiante/js/fontawesome-all.min.js"></script> 
+
 </body>
-
-
 </html>
