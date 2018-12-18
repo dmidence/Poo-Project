@@ -1,25 +1,25 @@
-{"codigo":"","asignatura":"Programacion II","departamento":"depto-ingeneria","uv":"4"}
-{"codigo":"","asignatura":"Algoritmos Y Estructura de Datos ","departamento":"depto-ingeneria","uv":"4"}
-{"codigo":"","asignatura":"Programacion Orientada a Objectos","departamento":"depto-ingeneria","uv":"5"}
-{"codigo":"","asignatura":"Bases de Datos I","departamento":"depto-ingeneria","uv":"5"}
-{"codigo":"","asignatura":"Bases de Datos II","departamento":"depto-ingeneria","uv":"5"}
-{"codigo":"","asignatura":"Circuitos Electricos ","departamento":"depto-ingeneria","uv":"3"}
-{"codigo":"","asignatura":"Electronica","departamento":"depto-ingeneria","uv":"3"}
-{"codigo":"","asignatura":"Instalaciones Electricas","departamento":"depto-ingeneria","uv":"3"}
-{"codigo":"","asignatura":"Redes de Datos I","departamento":"depto-ingeneria","uv":"3"}
-{"codigo":"","asignatura":"Redes de Datos II","departamento":"depto-ingeneria","uv":"3"}
-{"codigo":"","asignatura":"Arquitectura de Computadora ","departamento":"depto-ingeneria","uv":"3"}
-{"codigo":"","asignatura":"Lenguajes de programación","departamento":"depto-ingeneria","uv":"3"}
-{"codigo":"","asignatura":"Sistemas Operativos I","departamento":"depto-ingeneria","uv":"3"}
-{"codigo":"","asignatura":"Sistemas Operativos  II","departamento":"depto-ingeneria","uv":"3"}
-{"codigo":"","asignatura":"Administracio I","departamento":"depto-ingeneria","uv":"3"}
-{"codigo":"","asignatura":"Contabilidad","departamento":"depto-ingeneria","uv":"3"}
-{"codigo":"","asignatura":"Finzanzas","departamento":"depto-ingeneria","uv":"3"}
-{"codigo":"","asignatura":"Economia Digital","departamento":"depto-ingeneria","uv":"3"}
-{"codigo":"","asignatura":"Sistemas de Informarcion","departamento":"depto-ingeneria","uv":"3"}
-{"codigo":"","asignatura":"Diseño Digital","departamento":"depto-ingeneria","uv":"3"}
-{"codigo":"","asignatura":"Analisis y Diseño de Sistemas ","departamento":"depto-ingeneria","uv":"3"}
-{"codigo":"","asignatura":"Inteligencia Artifical","departamento":"depto-ingeneria","uv":"3"}
+{"codigo":"IS-210","asignatura":"Programacion II","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"4"}
+{"codigo":"IS-310","asignatura":"Algoritmos Y Estructura de Datos ","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"4"}
+{"codigo":"IS-410","asignatura":"Programacion Orientada a Objectos","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"5"}
+{"codigo":"IS-501","asignatura":"Bases de Datos I","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"5"}
+{"codigo":"IS-601","asignatura":"Bases de Datos II","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"5"}
+{"codigo":"IS-311","asignatura":"Circuitos Electricos ","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
+{"codigo":"IS-411","asignatura":"Electronica","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
+{"codigo":"IS-510","asignatura":"Instalaciones Electricas","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
+{"codigo":"IS-511","asignatura":"Redes de Datos I","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
+{"codigo":"IS-611","asignatura":"Redes de Datos II","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
+{"codigo":"IS-603","asignatura":"Arquitectura de Computadora ","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
+{"codigo":"IS-513","asignatura":"Lenguajes de programación","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
+{"codigo":"IS-412","asignatura":"Sistemas Operativos I","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
+{"codigo":"IS-512","asignatura":"Sistemas Operativos  II","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
+{"codigo":"IS-720","asignatura":"Administracio I","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
+{"codigo":"IS-721","asignatura":"Contabilidad","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
+{"codigo":"IS-820","asignatura":"Finanzas","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
+{"codigo":"IS-905","asignatura":"Economia Digital","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
+{"codigo":"IS-602","asignatura":"Sistemas de Informarcion","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
+{"codigo":"IS-711","asignatura":"Diseño Digital","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
+{"codigo":"IS-702","asignatura":"Analisis y Diseño de Sistemas ","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
+{"codigo":"IS-701","asignatura":"Inteligencia Artifical","carrera":"ingenieria en sistemas","departamento":"depto-ingenieria","uv":"3"}
 
 
 
