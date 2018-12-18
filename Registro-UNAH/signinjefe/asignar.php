@@ -16,17 +16,17 @@
 </head>
 <body>
 
-   <div id="principal">
+<div id="principal">
         <div  id="datos">
-       <div id="div-foto"> <img  width="200px"height="150px"src=" " alt=""></div>
+       <div id="div-foto"> <img  width="200px"height="150px"src="<?php echo $_SESSION["urlImagen"];  ?>" alt=""></div>
                 <div id="datos1" >
-            Numero De Cuenta:   
+            Numero De Empleado  <?php echo $_SESSION["NoJefe"];  ?>        
             <br>
             <br>
-            Nombre:                  
+            Nombre:  <?php echo $_SESSION["nombre"] ?>                 
     <br>
     <br>
-            Carrera:  
+            Carrera:  <?php echo $_SESSION["carrera"];  ?>
             <br>
             <br>
             </div>
@@ -34,47 +34,18 @@
              Periodo: III
              <br>
              <br>
-             Centro: 
+             Centro: <?php echo $_SESSION["centro"];  ?>
              <br>
              <br>
              año: 2018
             
             </div>
-           
+            </div> 
         </div>
-        <div id="div-matricula">
-        <select class="selecciones" name="departamentos" size=12>
-            
-            <optgroup label="Departamentos"> 
-                                                            <!--<option value="1">Ingeneria en sistema</option>   asi debe de incluirse los departamentos y secciones-->
+         <div id="docentes">
+        </div>
 
-            </optgroup> 
-           </select>
-            <select class="selecciones" name="asignatura" size=12>
-            
-            <optgroup label="Asignatura"> 
-           
-            </optgroup> 
-            </select>
-            <select class="selecciones" name="secciones" size=12>
-            
-            <optgroup label="Secciones"> 
-           
-            </optgroup>
-            </select> 
-            <br>
-            <input class="boton-matricular" type="button" value="Agregar">
-            </div>
-         <div>
-             <div id="mostrarasignaturas">
-                 Asignaturas Matriculas
-
-             </div>
-    </div>
-
-
-  </div>
-
+  
 
 
 

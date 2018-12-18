@@ -15,8 +15,6 @@ session_start();
             $_SESSION["urlImagen"]=$registro["urlImagen"];
             $_SESSION["nombre"]=$registro["nombre"];
             $_SESSION["acceso"]=$registro["acceso"];
-
-           
             $_SESSION["id"] = $registro["id"];
             $_SESSION["carrera"] = $registro["carrera"];
             $_SESSION["centro"] = $registro["centro"];

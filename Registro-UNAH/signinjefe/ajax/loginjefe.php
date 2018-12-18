@@ -11,6 +11,11 @@ session_start();
             $registro["mensaje"]="Acceso autorizado";
             $_SESSION["NoJefe"]=$_POST["NoJefe"];
             $_SESSION["acceso"]=$registro["acceso"];
+            $_SESSION["urlImagen"]=$registro["urlImagen"];
+            $_SESSION["nombre"]=$registro["nombre"];
+            $_SESSION["acceso"]=$registro["acceso"];
+            $_SESSION["carrera"] = $registro["carrera"];
+            $_SESSION["centro"] = $registro["centro"];
             echo json_encode($registro);
             exit;
         }
