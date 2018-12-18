@@ -8,10 +8,10 @@ $(document).ready(function(){
 		dataType:"json",
 		success:function(respuesta){
             console.log(respuesta);
-			$("#facu").append(`<option value="sel" >Seleccione la Facultad</option>`);
+			$("#slc-departamentos").html(`<option value="seleccionar">Seleccione el departamento/option>`+ $("#slc-departamentos").html());
 			for (var i =0;i<respuesta.length;i++){
-                $("#facu").append(`
-                <option value="${respuesta[i].op}">${respuesta[i].facultad}</option>`
+                $("#slc-departamentos").html(`
+                <option value="${respuesta[i].carpeta}">${respuesta[i].departamento}</option>`+$("#slc-departamentos").html()
 				);
 			}
 		},
@@ -22,14 +22,13 @@ $(document).ready(function(){
 
 
 
-
 });
 
 
 
-$("#clases").change(function(){
+$("#slc-asignaturas").change(function(){
 	
-	var facult = $("#facu").val();
+	var facult = $("slc-departamentos").val();
 	
 				switch(facult[1]){
 				case "ec":

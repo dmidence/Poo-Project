@@ -11,7 +11,7 @@
     <title>Matricula</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/logo.ico">
-    <script src="js/jquery.min.js"></script> 
+
     <link href="signinestudiante/css/bootstrap.min.css" rel="stylesheet"> 
     <link href="signinestudiante/css/matri.css" rel="stylesheet"> 
     <link href="signinestudiante/css/fa-svg-with-js.css" rel="stylesheet">
@@ -41,7 +41,7 @@ include ("header.html") ;
                          <div class="col-12" style="margin-bottom:2%">
   
                             <div>
-                                    <select name="facultades" id="facu" class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " style="float:left">
+                                    <select name="departamentos" id="slc-departamentos" class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " style="float:left">
                                         
                                     </select>
 
@@ -68,11 +68,11 @@ include ("header.html") ;
     </div>
 
 
- <script src="js/jquery-3.3.1.js"></script>     
-    <script src="js/bootstrap.min.js"></script>
+    <script src="signinestudiante/js/jquery.min.js"></script>     
+    <script src="signinestudiante/js/bootstrap.min.js"></script>
     <script src="signinestudiante/js/controlador.js"></script>
-
 <script src="signinestudiante/js/fontawesome-all.min.js"></script> 
-
 </body>
+
+
 </html>
