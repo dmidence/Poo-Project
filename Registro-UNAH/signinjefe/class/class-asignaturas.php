@@ -1,55 +1,55 @@
 <?php
 class Clase{
-	private $nombre;
+	private $asignatura;
     private $codigo;
     private $uv;
     private $carrera;
-	private $facu;
+	private $departamento;
 	
     
 
 	public function __construct(
-		$nombre = null,
+		$asignatura = null,
         $codigo = null,
         $uv = null,
         $carrera = null,
-        $facu = null
+        $departamento = null
         
 		
 	){
 
-		$this->nombre = $nombre;
+		$this->asignatura = $asignatura;
         $this->codigo = $codigo;
         $this->uv = $uv;
         $this->carrera = $carrera;
-        $this->facu = $facu;
+        $this->departamento = $departamento;
         
 		
 	}
 
 	public function __toString(){
 		$var = "Clase{"
-		."nombre: ".$this->nombre." , "
+		."asignatura: ".$this->asignatura." , "
         ."codigo: ".$this->codigo." , "
         ."uv: ".$this->uv." , "
         ."carrera:".$this->carrera." , "
-		."facu:".$this->facu;
+		."departamento:".$this->departamento;
 		return $var."}";
 	}
 
-	public function getNombre(){
-		return $this->nombre;
+	public function getasignatura(){
+		return $this->asignatura;
 	}
 
-	public function setNombre($nombre){
-		$this->nombre = $nombre;
+	public function setasignatura($asignatura){
+		$this->asignatura = $asignatura;
 	}
-	public function getFacu(){
-		return $this->facu;
+	public function getdepartamento(){
+		return $this->departamento;
 	}
 
-	public function setFacu($facu){
-		$this->facu = $facu;
+	public function setdepartamento($departamento){
+		$this->departamento = $departamento;
 	}
 
 	public function getCodigo(){
@@ -76,8 +76,8 @@ class Clase{
 		$this->uv = $uv;
 	}
 
-	public static function obtenerClases(){	
-		$archivo = fopen("../data/carreras/".$_GET["facultad"]."/asignaturas/".$_GET["carrera"].".json", "r");
+	public static function obtenerAsignaturas(){	
+		$archivo = fopen("../data/carreras/ingenieria-en-sistema/departamentos".$_GET["depto-"]."/asignaturas/".".json", "r");
 		$registros = array();
 		while(($linea=fgets($archivo))){
 			$registros[] = json_decode($linea,true);
@@ -87,19 +87,19 @@ class Clase{
 
 
 
- 	public function guardarClase(){
+ 	public function guardarAsignatura(){
         $respuesta = array();
-        if(isset($_POST["clase"])){
-			if(!file_exists("../data/carreras/".$_POST["facultad"]."/asignaturas/".$_POST["carrera"].".json")){
-				$archivo = fopen("../data/carreras/".$_POST["facultad"]."/asignaturas/".$_POST["carrera"].".json", "w");
+        if(isset($_POST["asignatura"])){
+			if(!file_exists("../data/carreras/".$_POST["departamento"]."/asignaturas/".$_POST["carrera"].".json")){
+				$archivo = fopen("../data/carreras/".$_POST["departamento"]."/asignaturas/".$_POST["carrera"].".json", "w");
 			}
-			$archivo = fopen("../data/carreras/".$_POST["facultad"]."/asignaturas/".$_POST["carrera"].".json", "a+");
+			$archivo = fopen("../data/carreras/".$_POST["departamento"]."/asignaturas/".$_POST["carrera"].".json", "a+");
 
-			$registro["clase"] = $this->nombre;
+			$registro["asigantura"] = $this->asignatura;
             $registro["codigo"] = $this->codigo;
             $registro["uv"] = $this->uv;
             $registro["carrera"] = $this->carrera;
-            $registro["facultad"] = $this->facu;
+            $registro["departamento"] = $this->departamento;
             
 			
 
