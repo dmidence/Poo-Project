@@ -3,7 +3,7 @@
 $(document).ready(function(){
 	console.log("Se ha cargado el DOM");
 	$.ajax({
-		url:"ajax/llenarfacu.php",
+		url:"signinestudiante/ajax/llenarfacu.php",
 		method:"GET",
 		dataType:"json",
 		success:function(respuesta){

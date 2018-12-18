@@ -21,6 +21,7 @@
 <?php
 include ("header.html") ;
 ?>
+<div id="principal">
 <div class="container" style="margin-top:150px">
           <button id="btnadic" style=""  class="btn btnad" type="button" data-toggle="modal" data-target="#adicionar">Adicionar Asignatura</button>
                     </div>
@@ -66,11 +67,11 @@ include ("header.html") ;
         </div>
           
     </div>
+    </div>
 
-
-    <script src="signinestudiante/js/jquery.min.js"></script>     
-    <script src="signinestudiante/js/bootstrap.min.js"></script>
-    <script src="signinestudiante/js/controlador.js"></script>
+    <script src="js/jquery.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/matricular.js"></script>
 <script src="signinestudiante/js/fontawesome-all.min.js"></script> 
 </body>
 

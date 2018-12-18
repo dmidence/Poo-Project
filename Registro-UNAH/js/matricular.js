@@ -8,15 +8,16 @@ $(document).ready(function(){
 		dataType:"json",
 		success:function(respuesta){
             console.log(respuesta);
-			$("#slc-departamentos").html(`<option value="seleccionar">Seleccione el departamento/option>`+ $("#slc-departamentos").html());
+			$("#slc-departamentos").append(`<option value="seleccionar">Seleccione el departamento/option>`);
 			for (var i =0;i<respuesta.length;i++){
-                $("#slc-departamentos").html(`
-                <option value="${respuesta[i].carpeta}">${respuesta[i].departamento}</option>`+$("#slc-departamentos").html()
+                $("#slc-departamentos").append(`
+                <option value="${respuesta[i].carpeta}">${respuesta[i].departamento}</option>`
 				);
 			}
 		},
 		error:function(error){
 			console.error(error);
+			$("#principal").append(error.responseText);
 		}
 	});
 
