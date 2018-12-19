@@ -13,7 +13,7 @@ $.ajax({
                 <div style=" display=inline-block;"class="div-table-cell" style="width: 15%;">Centro:&nbsp&nbsp ${respuesta[i].centro}</div>
                 <div style=" display=inline-block;"class="form-group mx-sm-3">
     <input  style="width: 60px; type="text" class="form-control" id="NotaFinal" placeholder="Nota final">
-  </div>`
+  </div> `
             );
            
         }
@@ -23,5 +23,23 @@ $.ajax({
         console.error(error);
         $("#tweets").append(error.responseText); 
     }
-});
 
+});
+    //Funcion Para el boton 
+
+    $("#btncalificar").click(function(){
+        alert("Calificaciones Subidas Satifactoria");
+       console.log(parametros)
+       $.ajax({
+        url:"ajax/class-alumnos.php?accion=2",
+        data:parametros,
+        method:"POST",
+        dataType:"json",
+        success:function(respuesta){
+            console.log(respuesta);
+            
+        }
+    });
+
+
+});

@@ -8,11 +8,12 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-  
+ 
       }
      #arribs{
          background-color: black;
          align-content: center;
+        
      }
 #div-foto{
     float: left;
@@ -100,4 +101,4 @@
 }
 #principal{
     text-align: center;
-}ç
+}

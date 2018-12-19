@@ -110,7 +110,7 @@ include ("header.html") ;
                                                         <p><b>Periodo</b></p>
                                                    </td>
                                                </tr>
-                                                                  <!--fila 2 se ira anadiendo conforme las asignaturas seleccionadas-->
+                                                                                                                 <!--fila 2 se ira anadiendo conforme las asignaturas seleccionadas-->
                                               
                                     </tbody>
                             </table> 
@@ -157,7 +157,7 @@ include ("header.html") ;
 
 
 
-<!-- Css del Boostrap ventana modal !-->
+<!-- Css del Boostrap ventana modal  añadilo arriba los css !-->
 
 
 

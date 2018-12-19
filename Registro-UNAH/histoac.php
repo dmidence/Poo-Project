@@ -1,45 +1,199 @@
-<?php
-    session_start();  
-    if (!isset($_SESSION["NoCuenta"]))
-        header("Location: login-estudiantes.php");//Redireccion con PHP
-?>
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Matricula</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/logo.ico">
-    <link href="css/matricula.css" rel="stylesheet"> 
-    <link href="signinestudiante/css/fa-svg-with-js.css" rel="stylesheet"> 
-</head>
-<body>
-<?php
-include ("header.html") ;
-?>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Estudiantes</title>
+    <link rel="icon" type="img/png" href="img/Logo-unah.jpg" width="100" />
+<!--Plantilla 
+                   Bootstrap core CSS -->
+                 <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+<style>
+    body {
          
-         <center> <h1><b>Registro de calificaciones </b> </h1></center>
-            <br>
-            
+         font-family: Arial, Helvetica, sans-serif;
+         background-image: url("img/fondogris.jpeg");
+         
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-size: cover;
+         background-attachment: fixed;
+     
+       }
+    </style>
+   </head>
+ 
+   <body>
+    
+  </head>
 
-			<div class="container-fluid">
-                <h2 class="text-center all-tittles">Listado de estudiantes matriculadose</strong></h2>
+  <body >
+
+    
+
+   
+        <!-- menu estudiantes -->
+    <section class="Menu" id="menu-estudiantes">
+        <div class="container">
+        <div class="row">
+            <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Informacion General</th>
+                    <th scope="row">Carrera:     INGENIERIA EN SISTEMAS</th>
+                    <th scope="col">Indice Global:   83</th>
+                    <th scope="col">Indice Periodo:   80</th>
                 
-                <div class="table-responsive" id="div-credenciales" style=" display=inline-block;">
-                    <div class="div-table" id="div-estudiantes" style=" display=inline-block; margin-left:400px;  margin-right:400px; background-color:white; font-weight:bold;   ; !important;">
-                       
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                  </tr>
+              </tr>
+            </thead>
+          
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Código de asignatura</th>
+                      <th scope="col">Asignatura</th>
+                      <th scope="col">UV</th>
+                      <th scope="col">Sección</th>
+                      <th scope="col">Año</th>
+                      <th scope="col">Periodo</th>
+                      <th scope="col">Calificacion</th>
+                      <th scope="col">OBS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">FF101</td>
+                      <td>Filosofia</td>
+                      <td>4</td>
+                      <td>0900</td>
+                      <td>2018</td>
+                      <td>1</td>
+                      <td>100</td>
+                      <td>APR</td>
+                      
+                    </tr>
+                    <tr>
+                      <td scope="row">EG011</td>
+                      <td>Español General</td>
+                      <td>4</td>
+                      <td>0800</td>
+                      <td>2018</td>
+                      <td>1</td>
+                      <td>83</td>
+                      <td>100</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">SC101</td>
+                      <td>Sociologia</td>
+                      <td>4</td>
+                      <td>1000</td>
+                      <td>2018</td>
+                      <td>1</td>
+                      <td>100</td>
+                      <td>APR</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">HH101</td>
+                        <td>Historia de Honduras</td>
+                        <td>4</td>
+                        <td>1200</td>
+                        <td>2018</td>
+                        <td>1</td>
+                        <td>80</td>
+                        <td>100</td>
 
-           
-	
+                      </tr>
 
-                <script src="js/jquery-3.3.1.min.js"></script>     
-    <script src="js/bootstrap.min.js"></script> 
-    <script src="js/controlador-notas.js"></script>
-</body>
+                  
+                        <tr>
+                            <td scope="row">MM111</td>
+                            <td>Geometria y Trigonometria</td>
+                            <td>5</td>
+                            <td>0900</td>
+                            <td>2018</td>
+                            <td>2</td>
+                            <td>100</td>
+                            <td>APR</td>
+                          </tr>
+
+                          <tr>
+                              <td scope="row">MM110</td>
+                              <td>Matematica I</td>
+                              <td>5</td>
+                              <td>1100</td>
+                              <td>2018</td>
+                              <td>2</td>
+                              <td>100</td>
+                              <td>APR</td>
+                            </tr>
+                          
+                              <tr>
+                                  <td scope="row">Bl130</td>
+                                  <td>Teatro</td>
+                                  <td>3</td>
+                                  <td>0700</td>
+                                  <td>2018</td>
+                                  <td>3</td>
+                                  <td>85</td>
+                                  <td>APR</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">IN101</td>
+                                    <td>InglesI</td>
+                                    <td>4</td>
+                                    <td>0900</td>
+                                    <td>2018</td>
+                                    <td>3</td>
+                                    <td>90</td>
+                                    <td>APR</td>
+                                  </tr>
+
+                                  <tr>
+                                      <td scope="row">MM201</td>
+                                      <td>Ecuaciones</td>
+                                      <td>3</td>
+                                      <td>1000</td>
+                                      <td>2018</td>
+                                      <td>3</td>
+                                      <td>80</td>
+                                      <td>APR</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">MM314</td>
+                                        <td>Programación Orientada a Objectos 100</td>
+                                        <td>5</td>
+                                        <td>1100</td>
+                                        <td>2018</td>
+                                        <td>5</td>
+                                        <td>100</td>
+                                        <td>APR</td>
+                                      </tr>
+                  </tbody>
+                </table>
+            </tbody>
+          </table> 
+
+        
+
+        
+
+    
+      </div>
+
+    </section>
+
+    
+
+    
+
+  </body>
+
 </html>
