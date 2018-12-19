@@ -18,10 +18,28 @@
 <?php
 include ("header.html") ;
 ?>
+         
+         <center> <h1><b>Registro de calificaciones </b> </h1></center>
+            <br>
+            
 
+			<div class="container-fluid">
+                <h2 class="text-center all-tittles">Listado de estudiantes matriculadose</strong></h2>
+                
+                <div class="table-responsive" id="div-credenciales" style=" display=inline-block;">
+                    <div class="div-table" id="div-estudiantes" style=" display=inline-block; margin-left:400px;  margin-right:400px; background-color:white; font-weight:bold;   ; !important;">
+                       
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+           
+	
 
-
-
+                <script src="js/jquery-3.3.1.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/controlador-notas.js"></script>
 </body>
 </html>

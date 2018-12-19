@@ -23,20 +23,21 @@
 <?php
 include ("header.html") ;
 ?>
+<div>
 <div class="container" style="margin-top:150px">
           <button id="btnadic" style=""  class="btn btnad" type="button" data-toggle="modal" data-target="#myModal">Adicionar Asignatura</button>
                     </div>
  
                         
 
-<!--  La ventana del examen del modal aqui se puede poder   -->
+<!--  La ventana del examen del modal aqui se puede poner   -->
 <!-- ventana para ver las asignatuas matriculadaaaasss   -->
                        
-<div>
+<div id="principal">
                        
                     </div>
                     
-                    <div class="seccion2">
+                    <div id="agregar-clases">
                             <div>   
                                     <p id="asignaturas Matriculadas">Asignaturas Matriculadas</p>  
                             </div>   
@@ -73,14 +74,14 @@ include ("header.html") ;
                                               
                                     </thead>
                                     <tbody id="clases-matriculadas">
-                                    <!--fila 2 se ira anadiendo conforme las asignaturas seleccionadas-->
+                                   
                                     </tbody>
                             </table>  
 <br>
                             <div style="background-color: #1994ff" id="derechos">   
                                     <p id="encabezado1">Asignaturas en Lista de Espera</p>  
                             </div>   
-                            <table class="border" cellspacing="0" cellpadding="0" id="tabla2">
+                            <table class="border" cellspacing="10" cellpadding="10" id="tabla2">
                                     <tbody > 
                                         <!--fila 1-->
                                                <tr>
@@ -109,7 +110,7 @@ include ("header.html") ;
                                                         <p><b>Periodo</b></p>
                                                    </td>
                                                </tr>
-                                        <!--fila 2 se ira anadiendo conforme las asignaturas seleccionadas-->
+                                                                  <!--fila 2 se ira anadiendo conforme las asignaturas seleccionadas-->
                                               
                                     </tbody>
                             </table> 
@@ -117,7 +118,7 @@ include ("header.html") ;
                             <div style="background-color: #1994ff" id="derechos">   
                                     <p id="encabezado1">Laboratorios Matriculados</p>  
                             </div>   
-                            <table class="border" cellspacing="0" cellpadding="0" id="tabla2">
+                            <table class="border" cellspacing="10" cellpadding="10" id="tabla2">
                                     <tbody > 
                                         <!--fila 1-->
                                                <tr>
@@ -146,8 +147,7 @@ include ("header.html") ;
                                                         <p><b>Periodo</b></p>
                                                    </td>
                                                </tr>
-                                        <!--fila 2 se ira anadiendo conforme las asignaturas seleccionadas-->
-                                              
+                                        
                                     </tbody>
                             </table> 
                     </div>
@@ -157,7 +157,7 @@ include ("header.html") ;
 
 
 
-
+<!-- Css del Boostrap ventana modal !-->
 
 
 
@@ -169,9 +169,9 @@ include ("header.html") ;
 
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             
-              <!-- Modal content-->
-              <div class="modal-content" style="background-color:#183F60">
-                <div class="modal-header centrar" >
+         
+              <div class="modal-content" >
+                <div class="modal-header centrar" id="arriba" >
                   <h6 class="modal-title" style="color:white"><b>Asignaturas</b></h6>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -181,19 +181,20 @@ include ("header.html") ;
   
                             <div>
                                     <select name="facultades" id="slc-facultades" class="form-control col-12 col-sm-12 col-md-6 col-lg-6 " style="float:left">
-                                        <!--AQUI SE VISUALIZAN LAS FACULTADES-->
+                                    
                                     </select>
+                                    
 
                                     <select class="form-control col-12 col-sm-12 col-md-6 col-lg-6 " id="select-carreras" style="float:left">
-                                        <!--AQUI SE VISUALIZAN LAS CARRERAS-->
+                                      
                                     </select>
 
-                                    <select multiple class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " id="select-clases"  size="5">
-                                        <!--AQUI SE VISUALIZAN LAS CLASES DE LA CARRERA-->                                       
+                                    <select  id="select-clases" multiple class="form-control col-12 col-sm-12 col-md-12 col-lg-12 "  size="5">
+                                                                          
                                     </select>
 
-                                    <select multiple class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " id="select-secciones" size="12">
-                                        <!--AQUI SE VISUALIZAN LAS SECCIONES DE LA CLASE-->      
+                                    <select  id="select-secciones" multiple class="form-control col-12 col-sm-12 col-md-12 col-lg-12 "  size="12">
+                                         
                                     </select>
                             </div>
 
@@ -209,7 +210,7 @@ include ("header.html") ;
           
     </div>
     </div>
-
+    </div>
 
  <script src="js/jquery-3.3.1.js"></script>     
     <script src="js/bootstrap.min.js"></script>

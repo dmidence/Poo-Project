@@ -10,6 +10,10 @@
         background-size: cover;
   
       }
+     #arribs{
+         background-color: black;
+         align-content: center;
+     }
 #div-foto{
     float: left;
 }
@@ -87,8 +91,13 @@
 .btnad:hover{
         background-color:orange;
       }
-.seccion2{
+#agregar-clases
+{
+    margin: 20px;
         background-color: #01315F;
-        color: white;  /*/cambiar */
+        color: white;  /*/cdeja el estilo aca */
 
 }
+#principal{
+    text-align: center;
+}ç
