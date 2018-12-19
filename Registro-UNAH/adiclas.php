@@ -28,6 +28,140 @@ include ("header.html") ;
                     </div>
  
                         
+
+
+<!-- ventana para ver las asignatuas matriculadaaaasss  -->
+                       
+<div>
+                       
+                    </div>
+                    
+                    <div class="seccion2">
+                            <div style="background-color: #1994ff" id="derechos">   
+                                    <p id="encabezado1">Asignaturas Matriculadas</p>  
+                            </div>   
+                            <table class="border" cellspacing="0" cellpadding="0" id="tabla2">
+                                    <thead> 
+                                        <!--fila 1-->
+                                               <tr>
+                                                   <td>
+                                                       <p><b>Cod.</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Sección</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Asignatura</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>HI</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>HF</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Días</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>UV</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Periodo</b></p>
+                                                   </td>
+                                               </tr>
+                                        
+                                              
+                                    </thead>
+                                    <tbody id="clases-matriculadas">
+                                    <!--fila 2 se ira anadiendo conforme las asignaturas seleccionadas-->
+                                    </tbody>
+                            </table>  
+<br>
+                            <div style="background-color: #1994ff" id="derechos">   
+                                    <p id="encabezado1">Asignaturas en Lista de Espera</p>  
+                            </div>   
+                            <table class="border" cellspacing="0" cellpadding="0" id="tabla2">
+                                    <tbody > 
+                                        <!--fila 1-->
+                                               <tr>
+                                                   <td>
+                                                       <p><b>Cod.</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Asignatura</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Sección</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>HI</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>HF</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Días</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>UV</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Periodo</b></p>
+                                                   </td>
+                                               </tr>
+                                        <!--fila 2 se ira anadiendo conforme las asignaturas seleccionadas-->
+                                              
+                                    </tbody>
+                            </table> 
+<br>
+                            <div style="background-color: #1994ff" id="derechos">   
+                                    <p id="encabezado1">Laboratorios Matriculados</p>  
+                            </div>   
+                            <table class="border" cellspacing="0" cellpadding="0" id="tabla2">
+                                    <tbody > 
+                                        <!--fila 1-->
+                                               <tr>
+                                                   <td>
+                                                       <p><b>Cod.</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Asignatura</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Sección</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>HI</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>HF</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Días</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>UV</b></p>
+                                                   </td>
+                                                   <td>
+                                                        <p><b>Periodo</b></p>
+                                                   </td>
+                                               </tr>
+                                        <!--fila 2 se ira anadiendo conforme las asignaturas seleccionadas-->
+                                              
+                                    </tbody>
+                            </table> 
+                    </div>
+                </div>
+        </section>
+
+
+
+
+
+
+
+
+
 </div>
 <div class="modal fade" id="myModal" role="dialog" >
 
