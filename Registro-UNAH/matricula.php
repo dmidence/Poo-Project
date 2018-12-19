@@ -65,11 +65,17 @@ include ("header.html") ;
     color: black;">  
              <h5><i class="fas fa-book"></i>Matricula</h5></a>
             </seccion>
+            <seccion class="col-lg-12 col-md-12 col-12  " style="
+            display: inherit; margin: 5px;
+              ">
             <a href="nofound.php" style=" -webkit-text-stroke: orange;
     -webkit-text-stroke-width: medium;
     color: black;">  
              <h5><i class="fas fa-book"></i>Solicitudes</h5></a>
             </seccion>
+            <seccion class="col-lg-12 col-md-12 col-12  " style="
+            display: inherit; margin: 5px;
+              ">
             <a href="nofound.php" style=" -webkit-text-stroke: orange;
     -webkit-text-stroke-width: medium;
     color: black;">  
