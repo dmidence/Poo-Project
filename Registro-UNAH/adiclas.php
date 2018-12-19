@@ -29,20 +29,20 @@ include ("header.html") ;
  
                         
 
-
-<!-- ventana para ver las asignatuas matriculadaaaasss  -->
+<!--  La ventana del examen del modal aqui se puede poder   -->
+<!-- ventana para ver las asignatuas matriculadaaaasss   -->
                        
 <div>
                        
                     </div>
                     
                     <div class="seccion2">
-                            <div style="background-color: #1994ff" id="derechos">   
-                                    <p id="encabezado1">Asignaturas Matriculadas</p>  
+                            <div>   
+                                    <p id="asignaturas Matriculadas">Asignaturas Matriculadas</p>  
                             </div>   
-                            <table class="border" cellspacing="0" cellpadding="0" id="tabla2">
+                            <table class="border" cellspacing="10px" cellpadding="10px" >
                                     <thead> 
-                                        <!--fila 1-->
+                                                                           <!--fila 1-->
                                                <tr>
                                                    <td>
                                                        <p><b>Cod.</b></p>
