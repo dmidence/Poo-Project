@@ -1,9 +1,9 @@
 <?php
- include("../class/class-clases.php");
+ include("../class/clases.php");
 	class Seccion{
 
 		private $codCarrera;
-        private $codClase;
+        private $codigo;
         private $seccion;
 		private $aula;
 		private $cupos;
@@ -15,39 +15,38 @@
 
 		public function __construct(
                     $codCarrera = null,
-                    $codClase = null,
+                    $codigo = null,
                     $seccion = null,
 					$aula = null,
 					$cupos = null,
 					$HI = null,
 					$HF = null,
 					$dias = null,
-					$edificio = null,
-                    $docente = null
+					$edificio = null
+                   
         ){
 			$this->codCarrera = $codCarrera;
-            $this->codClase = $codClase;
+            $this->codigo = $codigo;
             $this->seccion = $seccion;
 			$this->aula = $aula;
-			$this->cupos = $cupos;
 			$this->HI = $HI;
 			$this->HF = $HF;
 			$this->dias = $dias;
 			$this->edificio = $edificio;
-			$this->docente = $docente;
+	
         }
         
         public function toString(){
 			return "CodCarrera: " . $this->codCarrera . 
-                " CodClase: " . $this->codClase . 
+                " codigo: " . $this->codigo . 
                 " Seccion: " . $this->seccion.
 				" Aula: " . $this->aula . 
 				" Cupos: " . $this->cupos . 
 				" HI: " . $this->HI . 
 				" HF: " . $this->HF . 
 				" Dias: " . $this->dias . 
-				" Edificio: " . $this->edificio . 
-				" Docente: " . $this->docente;
+				" Edificio: " . $this->edificio ;
+				
 		}
 
 
@@ -58,11 +57,11 @@
 		public function setCodCarrera($codCarrera){
 			$this->codCarrera = $codCarrera;
 		}
-		public function getCodClase(){
-			return $this->codClase;
+		public function getcodigo(){
+			return $this->codigo;
 		}
-		public function setCodClase($codClase){
-			$this->codClase = $codClase;
+		public function setcodigo($codigo){
+			$this->codigo = $codigo;
         }
         public function getSeccion(){
 			return $this->seccion;
@@ -95,26 +94,15 @@
 		public function setHF($HF){
 			$this->HF = $HF;
 		}
-		public function getDias(){
-			return $this->dias;
-		}
-		public function setDias($dias){
-			$this->dias = $dias;
-		}
+		
 		public function getEdificio(){
 			return $this->edificio;
 		}
 		public function setEdificio($edificio){
 			$this->edificio = $edificio;
 		}
-		public function getDocente(){
-			return $this->docente;
-		}
-		public function setDocente($docente){
-			$this->docente = $docente;
-		}
-        
-        public static function obtenerSecciones($facultad, $codCarrera, $codClase){	
+	
+		public static function obtenerSecciones($facultad, $codCarrera, $codClase){	
             $archivo = fopen("../data/carreras/".$facultad."/asignaturas/secciones/".$codCarrera."-".$codClase.".json", "r");
             $registros = array();
             while(($linea=fgets($archivo))){
@@ -134,37 +122,36 @@
     
 
                 $registro["codCarrera"] = $this->codCarrera;
-                $registro["codClase"] = $this->codClase;
+                $registro["codigo"] = $this->codigo;
                 $registro["seccion"] = $this->seccion;
 
-                //obtener el numero de UV de la clase/////////////
+                                 
                         $archivoClases = fopen("../data/carreras/".$_POST["facultad"]."/asignaturas/".$_POST["codCarrera"].".json","r");   
                         while(($linea = fgets($archivoClases))){
                             $registroClase = json_decode($linea,true);
-                            if($registroClase["codigo"] == $_POST["codClase"]){
-                                //Obtener uv de clase
+                            if($registroClase["codigo"] == $_POST["codigo"]){
+                              //  Obtener uv de clase
                					 $registro["UV"] =$registroClase["uv"];
                                 break;
                             }
                         }
                         fclose($archivoClases);
-                /////////////////////////////////////////
+                
 
                 $registro["aula"] = $this->aula;
-                $registro["cupos"] = $this->cupos;
-                $registro["inicio"] = $this->HI;
-                $registro["final"] = $this->HF;
-                $registro["dias"] = $this->dias;
-                $registro["edificio"] = $this->edificio;
-                $registro["docente"] = $this->docente;
+                $registro["HI"] = $this->HI;
+                $registro["HF"] = $this->HF;
+				$registro["edificio"] = $this->edificio;
+				
+            
         
-              //obtener el nombre de la clase/////////////
+              																							//obtener el nombre de la clase/////////////
 
                         $archivoClases = fopen("../data/carreras/".$_POST["facultad"]."/asignaturas/".$_POST["codCarrera"].".json","r");   
                         while(($linea = fgets($archivoClases))){
                             $registroClase = json_decode($linea,true);
-                            if($registroClase["codigo"] == $_POST["codClase"]){
-                                //Obtener nombre de clase
+                            if($registroClase["codigo"] == $_POST["codigo"]){
+                            																										    //Obtener nombre de clase
                 $registro["clase"] =$registroClase["clase"];
                                 break;
                             }

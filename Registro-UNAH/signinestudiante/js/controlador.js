@@ -64,21 +64,18 @@ $("#facu").change(function(){
 $("#clases").change(function(){
 	var facultad = $("#facu").val();
     var clase = $("#clases").val();
-
-	
 	$.ajax({
 		url:"ajax/secciones.php?accion=1",			
 		method:"GET",
-        data: "codCarrera="+carrera+"&"
-              +"facultad="+facultad+"&"
-              +"codClase="+clase,
+        data: "facultad="+facultad+"&"
+              +"codigo="+clase,
 		dataType:"json",
 		success:function(respuesta){
             console.log(respuesta);
 
 			for (var i =0;i<respuesta.length;i++){
-                $("#secciones").append(`
-                <option value="${respuesta[i].seccion}"><b>Seccion:</b> ${respuesta[i].seccion} <b>cupos:</b> ${respuesta[i].cupos}   <b>dias:</b> ${respuesta[i].dias}   <b>Docente:</b> ${respuesta[i].docente}</option>`
+                $("#select-secciones").append(`
+                <option value="${respuesta[i].seccion}"><b>Seccion:</b> ${respuesta[i].seccion} <b>cupos:</b> ${respuesta[i].cupos}  </option>`
 				);
 			}
 		},
