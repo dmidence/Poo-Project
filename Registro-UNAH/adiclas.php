@@ -49,10 +49,10 @@ include ("header.html") ;
 
                                    
                                     <select multiple class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " id="clases"  size="7">
-                                    <input type="text" id="kira" style="display:none" class="form-control" value="<?php echo isset($_GET['carpeta'])?$_GET['carpeta']:''; ?>" disabled>                          
+                                                           
                                     </select>
 
-                                    <select multiple class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " id="select-secciones" size="7">
+                                    <select multiple class="form-control col-12 col-sm-12 col-md-12 col-lg-12 " id="secciones" size="7">
                                             
                                     </select>
                             </div>
