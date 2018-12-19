@@ -65,8 +65,16 @@ include ("header.html") ;
     color: black;">  
              <h5><i class="fas fa-book"></i>Matricula</h5></a>
             </seccion>
-           
-
+            <a href="nofound.php" style=" -webkit-text-stroke: orange;
+    -webkit-text-stroke-width: medium;
+    color: black;">  
+             <h5><i class="fas fa-book"></i>Solicitudes</h5></a>
+            </seccion>
+            <a href="nofound.php" style=" -webkit-text-stroke: orange;
+    -webkit-text-stroke-width: medium;
+    color: black;">  
+             <h5><i class="fas fa-book"></i>Cambio de Contraseña</h5></a>
+            </seccion>
           </div>
 
        <!-- <select class="selecciones" name="departamentos" size=12>
