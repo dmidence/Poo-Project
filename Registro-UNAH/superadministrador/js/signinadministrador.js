@@ -1,6 +1,6 @@
 $("#butsign").click(function(){
     $.ajax({
-		url:"ajax/loginadministrador.php",
+		url:"superadministrador/ajax/loginadministrador.php",
 		data:"NoCuenta="+$("#NoCuenta").val() + "&password="+$("#password").val(),
 		dataType:"json",
 		method:"POST",
